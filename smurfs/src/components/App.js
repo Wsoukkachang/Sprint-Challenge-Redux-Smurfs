@@ -23,11 +23,11 @@ class App extends Component {
         <div>Welcome to your Redux version of Smurfs!</div>
         <AddSmurf />
         <ul>
+          <h2>Smurfs List: </h2>
           {this.props.smurfs.map((smurf, index) => (
             <li key={index}>{smurf.name}, {smurf.age}, {smurf.height}</li>
           ))}
         </ul>
-        <div>Have fun!</div>
       </div>
     );
   }

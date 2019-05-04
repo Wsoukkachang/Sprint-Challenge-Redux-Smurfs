@@ -51,6 +51,30 @@ export default (state = initialState, action) => {
       }
     }
 
+    case POST_START: {
+      return {
+        ...state,
+        addingSmurf: true,
+        error: null
+      }
+    }
+
+    case POST_SUCCESS: {
+      return {
+        ...state,
+        addingSmurf: false,
+        smurfs: action.payload
+      }
+    }
+    
+    case POST_FAILURE: {
+      return {
+        ...state,
+        addingSmurf: false,
+        error: action.payload
+      }
+    }
+
     default:
       return state;
   }
