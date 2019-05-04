@@ -6,14 +6,15 @@ import { FETCH_START, FETCH_SUCCESS, FETCH_FAILURE,POST_START, POST_SUCCESS, POS
 
 /*
  Your initial/default state for this project could *Although does not have to* look a lot like this*/
- const intialState = {
-   smurfs: [],
-   fetchingSmurfs: false,
-   addingSmurf: false,
-   updatingSmurf: false,
-   deletingSmurf: false,
-   error: null
-  }
+ 
+ const initialState = {
+  smurfs: [],
+  fetchingSmurfs: false,
+  addingSmurf: false,
+  updatingSmurf: false,
+  deletingSmurf: false,
+  error: null
+}
 
 
 /*

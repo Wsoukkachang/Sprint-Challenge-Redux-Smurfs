@@ -21,7 +21,7 @@ export const POST_FAILURE = "POST_FAILURE";
      the "pending" states like, fetching, creating, updating and deleting.
    C - addSmurf
    R - getSmurfs
-   
+
    U - updateSmurf
    D - deleteSmurf
 */
@@ -41,7 +41,7 @@ export const getSmurfs = () => dispatch => {
 
 export const postSmurf = smurf => dispatch => {
   dispatch({type: POST_START});
-  axios.get('http://localhost:3333/smurfs', smurf)
+  axios.post('http://localhost:3333/smurfs', smurf)
     .then(res => {
       console.log(res);
       dispatch({type: POST_SUCCESS, payload: res.data})
