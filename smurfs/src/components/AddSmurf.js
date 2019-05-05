@@ -34,6 +34,10 @@ class AddSmurf extends React.Component {
         })
     }
 
+    updateSmurf = e => {
+        e.preventDefault();
+    }
+
     render(){
         return (
             <form onSubmit={this.handleSubmit}>
@@ -42,6 +46,7 @@ class AddSmurf extends React.Component {
             <input onChange={this.handleChange} value={this.state.newSmurf.height} name="height" placeholder="Height"/>
             <input onChange={this.handleChange} value={this.state.newSmurf.age} name="age" placeholder="Age"/>
             <button type="submit">Add Smurf</button>
+            <button onClick={this.updateSmurf}>Update Smurf</button>
             </form>
             )
         }
