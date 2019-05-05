@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: Gainsboro;
+  color: DodgerBlue;
+  font-size: 1.2em;
+  border: 10px outset grey;
 }
 
 .App-logo {
@@ -25,4 +31,68 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+h2 {
+  padding-top: 0px;
+  margin: 10px;
+}
+
+div {
+  margin: 20px;
+}
+
+span {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgb(9, 67, 134);
+}
+
+input {
+  margin-top: 25px;
+  padding: 9px;
+  font-size: 14px;
+}
+
+button {
+  margin: 10px 0px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: LightSteelBlue;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
+
+section button {
+  margin: 30px 7px;
+  padding: 10px;
+  font-size: 12px;
 }
